@@ -179,6 +179,7 @@ img {
 }
 
 body.menu-open .site-header {
+  background: transparent;
   color: var(--white);
   border-color: rgba(255, 250, 244, 0.2);
 }
