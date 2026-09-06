@@ -340,7 +340,7 @@ body.menu-open .site-header {
   position: relative;
   width: var(--page);
   margin: 0 auto;
-  padding: calc(var(--header-height) + 64px) 0 86px;
+  padding: calc(var(--header-height) + 64px) 0 32px;
 }
 
 .hero__copy {
@@ -420,7 +420,7 @@ body.menu-open .site-header {
 }
 
 .about {
-  padding: 118px 0 26px;
+  padding: 24px 0 26px;
 }
 
 .about__inner {
@@ -928,7 +928,7 @@ body.menu-open .site-header {
   }
 
   .about {
-    padding: 82px 0 10px;
+    padding: 20px 0 10px;
   }
 
   .about__inner {
