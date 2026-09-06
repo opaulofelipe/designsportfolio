@@ -454,15 +454,8 @@ body.menu-open .site-header {
   position: absolute;
   z-index: 2;
   inset: 0;
-  display: grid;
-  place-items: end end;
-  padding: 12px;
   background: linear-gradient(145deg, transparent 68%, rgba(40, 24, 23, 0.07));
-  color: rgba(255, 255, 255, 0.48);
-  content: "PAULO FELIPE";
-  font-size: 0.5rem;
-  font-weight: 750;
-  letter-spacing: 0.16em;
+  content: "";
   pointer-events: auto;
 }
 
