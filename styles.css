@@ -8,8 +8,8 @@
   --ink: #281817;
   --white: #fffaf4;
   --line: rgba(90, 42, 39, 0.24);
-  --sans: "Manrope", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --display: "Orbitron", "Arial Black", ui-sans-serif, sans-serif;
+  --sans: "Source Sans 3", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --display: "Inter Tight", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
   --page: min(100% - 40px, 1440px);
   --header-height: 88px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -99,9 +99,9 @@ img {
   z-index: 2;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   font-size: 0.92rem;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
@@ -113,8 +113,9 @@ img {
   border: 1px solid currentColor;
   border-radius: 50%;
   font-family: var(--display);
-  font-size: 0.84rem;
-  font-weight: 800;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
 }
 
 .menu-button {
@@ -234,9 +235,9 @@ body.menu-open .site-header {
   padding: 8px 0;
   font-family: var(--display);
   font-size: clamp(2.8rem, 6.2vw, 6.7rem);
-  line-height: 0.95;
-  font-weight: 700;
-  letter-spacing: -0.045em;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   transition: color 200ms ease, padding 300ms var(--ease);
 }
 
@@ -353,9 +354,9 @@ body.menu-open .site-header {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(5rem, 9.6vw, 10rem);
-  font-weight: 800;
-  line-height: 0.74;
-  letter-spacing: -0.085em;
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.06em;
 }
 
 .hero h1 span {
@@ -465,8 +466,50 @@ body.menu-open .site-header {
   user-select: none;
 }
 
+.about {
+  padding: 118px 0 26px;
+}
+
+.about__inner {
+  display: grid;
+  width: var(--page);
+  margin-inline: auto;
+  padding: 54px 0 62px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 20px 6vw;
+  align-items: start;
+}
+
+.about__inner .eyebrow {
+  margin-bottom: 0;
+}
+
+.about__content {
+  grid-column: 2;
+  max-width: 760px;
+}
+
+.about__content h2 {
+  margin: 0 0 28px;
+  font-family: var(--display);
+  font-size: clamp(3rem, 5.4vw, 6.2rem);
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.about__content p {
+  max-width: 670px;
+  margin: 0;
+  color: var(--mauve-bark);
+  font-size: clamp(1.18rem, 1.65vw, 1.48rem);
+  line-height: 1.58;
+}
+
 .portfolio {
-  padding: 128px 0 0;
+  padding: 108px 0 0;
 }
 
 .section-heading,
@@ -495,9 +538,9 @@ body.menu-open .site-header {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(3rem, 6.5vw, 7.4rem);
-  font-weight: 700;
-  line-height: 0.92;
-  letter-spacing: -0.055em;
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.045em;
 }
 
 .section-heading > p:last-child {
@@ -569,9 +612,9 @@ body.menu-open .site-header {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(3rem, 6vw, 6.2rem);
-  font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.055em;
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
 }
 
 .work-section__header > p {
@@ -731,9 +774,9 @@ body.menu-open .site-header {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(3.6rem, 8vw, 9rem);
-  font-weight: 700;
-  line-height: 0.86;
-  letter-spacing: -0.065em;
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
 }
 
 .contact h2 em {
@@ -888,10 +931,6 @@ body.menu-open .site-header {
     scroll-padding-top: 88px;
   }
 
-  .wordmark__name {
-    display: none;
-  }
-
   .menu-panel__inner {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
@@ -949,8 +988,31 @@ body.menu-open .site-header {
     margin-top: 22px;
   }
 
+  .about {
+    padding: 82px 0 10px;
+  }
+
+  .about__inner {
+    display: block;
+    padding: 40px 0 46px;
+  }
+
+  .about__inner .eyebrow {
+    margin-bottom: 28px;
+  }
+
+  .about__content h2 {
+    margin-bottom: 22px;
+    font-size: clamp(3.4rem, 15vw, 5.6rem);
+  }
+
+  .about__content p {
+    max-width: 34rem;
+    font-size: 1.15rem;
+  }
+
   .portfolio {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 
   .section-heading {

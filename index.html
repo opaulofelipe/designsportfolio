@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -42,7 +42,6 @@
     <header class="site-header" aria-label="Cabeçalho do site">
       <a class="wordmark" href="#inicio" aria-label="Paulo Felipe — início">
         <span class="wordmark__monogram" aria-hidden="true">PF</span>
-        <span class="wordmark__name">Paulo Felipe</span>
       </a>
 
       <button
@@ -63,6 +62,7 @@
       <div class="menu-panel__inner">
         <p class="menu-panel__eyebrow">Navegação</p>
         <nav class="menu-panel__nav" aria-label="Navegação principal">
+          <a href="#sobre"><span>00</span> Sobre mim</a>
           <a href="#logos"><span>01</span> Logos</a>
           <a href="#posts"><span>02</span> Posts</a>
           <a href="#stories"><span>03</span> Stories</a>
@@ -133,6 +133,18 @@
         </div>
 
         <div class="hero__index" aria-hidden="true">Portfólio selecionado</div>
+      </section>
+
+      <section class="about" id="sobre" aria-labelledby="about-title">
+        <div class="about__inner reveal">
+          <p class="eyebrow">Perfil</p>
+          <div class="about__content">
+            <h2 id="about-title">Sobre mim</h2>
+            <p>
+              Formado em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of Arts, via Coursera.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
